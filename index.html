@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Food Menu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <section class = "menu">
+      <div class = "menu-container">
+        <div class = "menu-head">
+          <h2>Desi Food Menu</h2>
+          <p>"From the streets of Mumbai to the royal kitchens of Lucknow, explore India's culinary diversity on your plate."</p>
+        </div>
+
+        <div class = "menu-btns">
+          <button type = "button" class = "menu-btn active-btn" id = "featured">featured</button>
+          <button type = "button" class = "menu-btn" id = "Breads">Breads</button>
+          <button type = "button" class = "menu-btn" id = "Desserts">Desserts</button>
+        </div>
+
+        <div class = "food-items">
+       
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "Butter Chicken.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Butter Chicken</h2>  
+              <div class = "line"></div>
+              <h3 class = "food-price">99.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Breads">
+            <div class = "food-img">
+              <img src = "Naan.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Naan</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">35.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Breads</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+           <!-- item -->
+           <div class = "food-item Desserts">
+            <div class = "food-img">
+              <img src = "Gulab Jamun.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Gulab Jamun</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">120.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Desserts</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+         
+
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "Rogan Josh.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Rogan Josh</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">115.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Breads">
+            <div class = "food-img">
+              <img src = "Garlic Naan.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Garlic Naan</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">40.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Breads</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Desserts">
+            <div class = "food-img">
+              <img src = "jalebi.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">jalebi</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">150.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Desserts</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+        
+
+
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "palak paneer.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Palak Paneer</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">119.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Breads">
+            <div class = "food-img">
+              <img src = "Paratha.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Paratha</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">15.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Breads</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Desserts">
+            <div class = "food-img">
+              <img src = "Pista_Burfi.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">pista_Burfi</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">110.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Desserts</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "Chole Bhature.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chole Bhature</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">140.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item Desserts">
+            <div class = "food-img">
+              <img src = "khoya_burfii.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Khoya Burfii</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">220.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Desserts</span></p>
+            </div>
+            <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+
+       
+
+           <!-- item -->
+           <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "vegBiryani.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">vegBiryani</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">120.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+        <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+                   <!-- item -->
+                   <div class = "food-item featured">
+                    <div class = "food-img">
+                      <img src = "paneer-tikka.jpg" alt = "food image">
+                    </div>
+                    <div class = "food-content">
+                      <h2 class = "food-name">paneer-tikka</h2>
+                      <div class = "line"></div>
+                      <h3 class = "food-price">100.00</h3>
+                      <ul class = "rating">
+                        <li><i class = "fas fa-star"></i></li>
+                        <li><i class = "fas fa-star"></i></li>
+                        <li><i class = "fas fa-star"></i></li>
+                        <li><i class = "fas fa-star"></i></li>
+                        <li><i class = "far fa-star"></i></li>
+                      </ul>
+                      <p class = "category">Categories: <span>featured</span></p>
+                    </div>
+                <button class="custom-button" onclick="handleClick()">order now</button>
+        
+                  </div>
+                  <!-- end of item -->
+
+                           <!-- item -->
+           <div class = "food-item Breads">
+            <div class = "food-img">
+              <img src = "simpleroti.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">simple roti</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">10.00</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <p class = "category">Categories: <span>Breads</span></p>
+            </div>
+        <button class="custom-button" onclick="handleClick()">order now</button>
+
+          </div>
+          <!-- end of item -->
+        </div>
+
+      </div>
+    </section>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
